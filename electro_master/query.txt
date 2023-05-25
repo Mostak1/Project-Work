@@ -1,0 +1,17 @@
+
+users and row table
+
+SELECT users.id, users.first_name, users.email, users.home, users.role, roles.id, roles.rank FROM users JOIN roles ON users.role = roles.id;
+
+brand table
+SELECT brands.id, brands.cat_id, brands.name, categories.name FROM brands JOIN categories ON brands.cat_id = categories.id;
+SELECT brands.id, brands.cat_id, brands.name as name, categories.name as cat_name FROM brands JOIN categories ON brands.cat_id = categories.id;
+
+product query
+SELECT products.id, products.cat_id, products.brand_id, products.title, products.sprice, products.images, categories.name as cat_name, brands.name as brand_name  FROM products JOIN categories ON products.cat_id = categories.id JOIN brands ON products.brand_id=brands.id;
+
+SELECT products.id, products.cat_id, products.brand_id, products.title,products.pprice, products.sprice, products.images,products.discount,products.quantity,products.hot,categories.name as cat_name, brands.name as brand_name FROM products JOIN categories ON products.cat_id = categories.id JOIN brands ON products.brand_id=brands.id WHERE products.hot>0 ORDER BY products.hot DESC;
+
+lowstock_products
+SELECT products.id, products.cat_id, products.brand_id, products.title,products.pprice, products.sprice, products.images,products.discount,products.quantity,products.hot,categories.name as cat_name, brands.name as brand_name FROM products JOIN categories ON products.cat_id = categories.id JOIN brands ON products.brand_id=brands.id WHERE products.quantity<5 ORDER BY products.quantity;
+
