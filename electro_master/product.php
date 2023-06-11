@@ -236,8 +236,8 @@ require __DIR__ . '/components/header.php';
                         productId: productId
                     },
                     success: function(response) {
-                        alert(response);
-                        // console.log(count.length);
+                        alert('Product Add to wishlist');
+                        console.log(response);
                     },
                     error: function() {
                         alert('Error adding product to wishlist.');
