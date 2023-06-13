@@ -217,7 +217,7 @@ if (isset($_POST['submit'])) {
 
             </div>
         </div>
-        <marquee behavior="" direction="">Testing page load</marquee>
+        <marquee behavior="" direction="">Product Details and Review</marquee>
             <div class="row">
                 <div class="text-center text-gray bg-dark fs-3">
                     <a href="#details" data-page="detl.php" id="details" class="redlinem homenvm me-2">Details </a>
