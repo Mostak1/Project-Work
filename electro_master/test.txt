@@ -1,0 +1,1 @@
+INSERT INTO `order`(`user_id`, `total`, `discount`, `comment`, `payment`, `trxid`, `status`,`b_address`,`s_address`) VALUES ('7','1173900','4','','cash','','Pending','Mirpur','Shenparea Parbata')
